@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of recog_cluster</title>
+  <meta name="keywords" content="recog_cluster">
+  <meta name="description" content="Clusters all cuboids in DATASETS (based on their descriptions).">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html recognition -->
+<h1>recog_cluster
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Clusters all cuboids in DATASETS (based on their descriptions).</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function [clusters,M] = recog_cluster( DATASETS, k, par_kmeans ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Clusters all cuboids in DATASETS (based on their descriptions).
+
+ INPUTS
+   DATASETS    - array of structs, should have the fields:
+           .cuboids    - [optional] length N cell vector of sets of cuboids
+           .desc       - length N cell vector of cuboid descriptors
+   k           - number of clusters to use
+   par_kmeans  - parameters for kmeans2
+
+ OUTPUTS
+   clusters    - cluster centers
+   M           - cluster movie, slow to calculate
+
+ See also <a href="recog_test.html" class="code" title="function [ER,CMS] = recog_test( DATASETS, k, nreps )">RECOG_TEST</a></pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+</ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="recog_test.html" class="code" title="function [ER,CMS] = recog_test( DATASETS, k, nreps )">recog_test</a>	Test the performance of behavior recognition using the cuboid representation.</li><li><a href="recog_test_nfold.html" class="code" title="function [ER,CM] = recog_test_nfold( DATASETS, k, nreps )">recog_test_nfold</a>	Test the performance of behavior recognition using cross validation.</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

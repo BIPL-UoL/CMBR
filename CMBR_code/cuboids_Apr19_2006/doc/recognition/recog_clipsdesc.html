@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of recog_clipsdesc</title>
+  <meta name="keywords" content="recog_clipsdesc">
+  <meta name="description" content="Create descriptor of every clip.">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html recognition -->
+<h1>recog_clipsdesc
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Create descriptor of every clip.</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function data = recog_clipsdesc( DATASETS, clusters, csigma ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Create descriptor of every clip.
+
+ Takes clusters and assigns each cuboid to its type.  Next, the cuboid types are
+ histogrammed to create a descriptor for each clip in each dataset.
+
+ INPUTS
+   DATASETS    - array of structs, should have the fields:
+           .desc       - length N cell vector of cuboid descriptors
+           .ncilps     - N: number of clips
+   clusters    - cuboid clusters
+   csigma      - soft assign see clipdesc
+
+ OUTPUTS
+   data        - length N cell vector of (nclips x p) arrays of data</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="../descriptors/imagedesc2clusters.html" class="code" title="function desc2 = imagedesc2clusters( desc, clusters, csigma )">imagedesc2clusters</a>	Assignment of descriptors to clusters.</li><li><a href="recog_clipdesc.html" class="code" title="function clipdesc  = recog_clipdesc( desc_cuboids, nclusters, nframes )">recog_clipdesc</a>	Creates a clip descriptor that is simply a histogram of cuboids present.</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="recog_test.html" class="code" title="function [ER,CMS] = recog_test( DATASETS, k, nreps )">recog_test</a>	Test the performance of behavior recognition using the cuboid representation.</li><li><a href="recog_test_nfold.html" class="code" title="function [ER,CM] = recog_test_nfold( DATASETS, k, nreps )">recog_test_nfold</a>	Test the performance of behavior recognition using cross validation.</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of datadir</title>
+  <meta name="keywords" content="datadir">
+  <meta name="description" content="Get location of data; alter file depending on location of dataset.">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html recognition -->
+<h1>datadir
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Get location of data; alter file depending on location of dataset.</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function dir = datadir( set_ind ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Get location of data; alter file depending on location of dataset.
+
+ INPUTS
+   set_ind     - [optional] set index, value between 0 and nsets-1
+
+ OUTPUTS
+   dir         - final directory 
+
+ EXAMPLE
+   dir = getclipsdir( 'mouse00', 'features' )</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+</ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="conv_clips2datasets.html" class="code" title="function DATASETS = conv_clips2datasets( nsets, cliptypes )">conv_clips2datasets</a>	Converts between representations of behavior (mat -> DATASETS).</li><li><a href="conv_clips2movies.html" class="code" title="function conv_clips2movies( set_ind, maskflag )">conv_clips2movies</a>	Converts between representations of behavior (avi -> mat).</li><li><a href="conv_datasets2clips.html" class="code" title="function conv_datasets2clips( DATASETS, cliptypes )">conv_datasets2clips</a>	Converts between representations of behavior (DATASETS -> mat).</li><li><a href="conv_movies2clips.html" class="code" title="function conv_movies2clips( set_ind )">conv_movies2clips</a>	Converts between representations of behavior (mat -> avi).</li><li><a href="conv_movies2divx.html" class="code" title="function conv_movies2divx( set_ind )">conv_movies2divx</a>	Converts between representations of behavior (avi -> compressed avi).</li><li><a href="featuresLGconv.html" class="code" title="function DATASETS = featuresLGconv( nsets, cliptypes )">featuresLGconv</a>	Convert features to DATASETS format so output is same as after featuresSM.</li><li><a href="featuresLGdesc.html" class="code" title="function featuresLGdesc( nsets, cubdesc )">featuresLGdesc</a>	Applies descriptor to every cuboid of every clip of every set.</li><li><a href="featuresLGdetect.html" class="code" title="function featuresLGdetect( nsets, cliptypes, par_stfeatures )">featuresLGdetect</a>	Detects features for each set of cuboids using stfeatures.</li><li><a href="featuresLGpca.html" class="code" title="function [cubdesc,cuboids] = featuresLGpca( nsets, ncuboids, cubdesc, kpca  )">featuresLGpca</a>	Dimensionality reduction for cuboids descriptors.</li><li><a href="recognition_demo.html" class="code" title="">recognition_demo</a>	Describes all steps of behavior recognition; example for facial expressions.</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

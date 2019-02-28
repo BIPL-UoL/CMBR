@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of jitter_dist</title>
+  <meta name="keywords" content="jitter_dist">
+  <meta name="description" content="Calculates the minumum distance between two sets of possibly 'jittered' feature vectors.">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html descriptors -->
+<h1>jitter_dist
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Calculates the minumum distance between two sets of possibly 'jittered' feature vectors.</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function D = jitter_dist( desc1, desc2, distfun ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Calculates the minumum distance between two sets of possibly 'jittered' feature vectors.
+
+ Normally a feature vector is a p element vector.  If there is jitter that means an
+ object is described by r such p element vectors, taken from different 'views'. The
+ distance between a jittered vector (r 1xp vectors) and a 1xp vector is simply taken as
+ the minimum of the r distances.  
+
+ If both desc1 and desc2 are jittered vectors, than a full search is not performed -
+ instead the following is used to obtain the distance:
+   D = min( jitter_dist(desc1(middle),desc2), jitter_dist(desc1,desc2(middle)) ).
+ 
+ INPUTS
+   desc1       - m x p x r1 array of m rxp jittered vectors (r1=1 ok) 
+   desc1       - n x p x r2 array of m rxp jittered vectors (r2=1 ok) 
+   dist_func   - [optional] distance function that regular non jittered vectors
+
+ OUTPUTS
+   D           - m x n array of distances
+
+ EXAMPLE
+   load testimages;
+   A = double(squeeze(reshape( images, [], size(images,3) )))';
+   figure(1); im( jitter_dist(A,A) ); 
+   B = jitter_image(images,1,0,3,3);
+   B = reshape( B, [], size(B,3), size(B,4) );
+   B = double(squeeze(permute(B,[2 1 3])));
+   figure(2); im( jitter_dist(B,B) ); 
+
+ See also DIST_EUCLIDEAN</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="jitter_dist.html" class="code" title="function D = jitter_dist( desc1, desc2, distfun )">jitter_dist</a>	Calculates the minumum distance between two sets of possibly 'jittered' feature vectors.</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="imagedesc.html" class="code" title="function desc = imagedesc( I, imdesc, show )">imagedesc</a>	Runs descriptor on a set of images, optionally jitters, and optionally applies PCA.</li><li><a href="imagedesc2clusters.html" class="code" title="function desc2 = imagedesc2clusters( desc, clusters, csigma )">imagedesc2clusters</a>	Assignment of descriptors to clusters.</li><li><a href="imagedesc_demo.html" class="code" title="">imagedesc_demo</a>	Demo to show how imagedesc works.</li><li><a href="jitter_dist.html" class="code" title="function D = jitter_dist( desc1, desc2, distfun )">jitter_dist</a>	Calculates the minumum distance between two sets of possibly 'jittered' feature vectors.</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

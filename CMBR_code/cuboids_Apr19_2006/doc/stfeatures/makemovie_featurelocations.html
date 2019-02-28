@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of makemovie_featurelocations</title>
+  <meta name="keywords" content="makemovie_featurelocations">
+  <meta name="description" content="Creates visualization of detected feature locations over multiple scales.">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html stfeatures -->
+<h1>makemovie_featurelocations
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Creates visualization of detected feature locations over multiple scales.</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function makemovie_featurelocations( I, sigmas, taus, subs_cell, moviename, fps ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Creates visualization of detected feature locations over multiple scales.
+ 
+ Takes scales as inputs to determine radii for detected cuboids. subs_cell should be an
+ nsgimasxntaus cell array where each element is a set of subscripts denoting the
+ locations of the feature at the given spatial/temporal scale.
+
+ INPUTS
+   I           - 3D input image
+   sigmas      - spatial scales
+   taus        - temporal scales
+   subs_cell   - see above
+   moviename   - base name for movie
+   fps         - [optional] frames per second
+
+ See also <a href="stfeatures_allscales.html" class="code" title="function [RS,subs_cell,vals_cell] =stfeatures_allscales( I, sigmas, taus, stfeatures_params, moviename )">STFEATURES_ALLSCALES</a></pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="cuboid_display.html" class="code" title="function [ V, Imasked ] = cuboid_display( I, cuboids_rs, subs, show )">cuboid_display</a>	Fancy cuboid visualization.</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="stfeatures_allscales.html" class="code" title="function [RS,subs_cell,vals_cell] =stfeatures_allscales( I, sigmas, taus, stfeatures_params, moviename )">stfeatures_allscales</a>	Apply spatio-temporal feature detector at a number of scales.</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of Contents</title>
+  <meta name="keywords" content="Contents">
+  <meta name="description" content="CUBOIDS/STFEATURES">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html stfeatures -->
+<h1>Contents
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>CUBOIDS/STFEATURES</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>This is a script file. </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> CUBOIDS/STFEATURES
+ See also
+
+ Spatio-Temporal feature detection
+   <a href="stfeatures.html" class="code" title="function [R,subs,vals,cuboids,V] = stfeatures( I, sigma, tau, periodic, thresh, maxn,overlap_r, shr_spt, shr_tmp, show )">stfeatures</a>                 - Interface to spatio-temporal feature detectors.
+   <a href="stfeatures_periodic.html" class="code" title="function Lquad = stfeatures_periodic( I, sigma, tau )">stfeatures_periodic</a>        - Piotr's spatiotemporal feature detector  - interface through <a href="stfeatures.html" class="code" title="function [R,subs,vals,cuboids,V] = stfeatures( I, sigma, tau, periodic, thresh, maxn,overlap_r, shr_spt, shr_tmp, show )">stfeatures</a>.
+   <a href="stfeatures_harris.html" class="code" title="function H = stfeatures_harris( I, sigma, tau )">stfeatures_harris</a>          - Laptev &amp; Lindeberg spatiotemporal feature detector - interface through <a href="stfeatures.html" class="code" title="function [R,subs,vals,cuboids,V] = stfeatures( I, sigma, tau, periodic, thresh, maxn,overlap_r, shr_spt, shr_tmp, show )">stfeatures</a>.
+   <a href="cuboid_extract.html" class="code" title="function [ cuboids, cuboid_starts, cuboid_ends, subs ] =cuboid_extract( I, cuboids_rs, subs, extractflag )">cuboid_extract</a>             - Extracts cuboids of given size from the array I at specified locations.
+
+ Display
+   <a href="cuboid_display.html" class="code" title="function [ V, Imasked ] = cuboid_display( I, cuboids_rs, subs, show )">cuboid_display</a>             - Fancy cuboid visualization.
+   <a href="cuboid_display_stv.html" class="code" title="function cuboid_display_stv2( I, cuboids_rs, subs )">cuboid_display_stv</a>         - Fancy 3D spatiotemporal cuboid visualization.
+   <a href="makemovie_featurelocations.html" class="code" title="function makemovie_featurelocations( I, sigmas, taus, subs_cell, moviename, fps )">makemovie_featurelocations</a> - Creates visualization of detected feature locations over multiple scales.
+   <a href="makemovie_features.html" class="code" title="function M = makemovie_features( cuboids, moviename, fps )">makemovie_features</a>         - Creates movies of cuboids (normalizes each to [0,1] first).
+   <a href="quadfilterpair.html" class="code" title="function quadfilterpair">quadfilterpair</a>             - Used to show the filters used by <a href="stfeatures_periodic.html" class="code" title="function Lquad = stfeatures_periodic( I, sigma, tau )">stfeatures_periodic</a>.
+
+ Demos
+   <a href="stfeatures_allscales.html" class="code" title="function [RS,subs_cell,vals_cell] =stfeatures_allscales( I, sigmas, taus, stfeatures_params, moviename )">stfeatures_allscales</a>       - Apply spatio-temporal feature detector at a number of scales.
+   <a href="stfeatures_demo.html" class="code" title="function stfeatures_demo( periodic )">stfeatures_demo</a>            - Demo of <a href="stfeatures.html" class="code" title="function [R,subs,vals,cuboids,V] = stfeatures( I, sigma, tau, periodic, thresh, maxn,overlap_r, shr_spt, shr_tmp, show )">stfeatures</a> on the &quot;oscillating example&quot;.
+   <a href="synthetic_stsequence.html" class="code" title="function f=synthetic_stsequence( sz, type )">synthetic_stsequence</a>       - Simple synthetic sequences for feature detection.</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+</ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+</ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

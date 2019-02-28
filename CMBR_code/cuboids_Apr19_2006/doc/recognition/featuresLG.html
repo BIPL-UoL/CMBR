@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of featuresLG</title>
+  <meta name="keywords" content="featuresLG">
+  <meta name="description" content="Feature detection and description applied to .mat behavior data.">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html recognition -->
+<h1>featuresLG
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Feature detection and description applied to .mat behavior data.</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function [DATASETS,cubdesc,cuboids] = featuresLG( nsets, cliptypes,par_stfeatures, ncuboids, cubdesc, kpca ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Feature detection and description applied to .mat behavior data. 
+
+ See RECOGNITION_DEMO / FEATURESSM for general steps of detection / description and
+ differences between this function and FEATURESSM.
+ 
+ INPUTS
+   nsets           - number of sets
+   cliptypes       - types of clips (cell of strings)
+   par_stfeatures  - parameters for feature detection [see featuresLGdetect]
+   cubdesc         - cuboid descriptor [see featuresLGdesc]
+   ncuboids        - number of cuboids to grab per .mat file [see featuresLGpca]
+   kpca            - number of dimensions to reduce data to [see featuresLGpca]
+
+ OUTUPTS
+   DATASETS    - array of structs, will have fields:
+           .IDX        - length N vector of clip types
+           .ncilps     - N: number of clips
+           .cubcount   - length N vector of cuboids counts for each clip clip
+           .subs       - length N cell vector of sets of locations of cuboids
+           .desc       - length N cell vector of cuboid descriptors
+   cubdesc         - output of featuresLGpca
+   cuboids         - output of featuresLGpca
+   
+ See also <a href="featuresLGdetect.html" class="code" title="function featuresLGdetect( nsets, cliptypes, par_stfeatures )">FEATURESLGDETECT</a>, <a href="featuresLGpca.html" class="code" title="function [cubdesc,cuboids] = featuresLGpca( nsets, ncuboids, cubdesc, kpca  )">FEATURESLGPCA</a>, <a href="featuresLGdesc.html" class="code" title="function featuresLGdesc( nsets, cubdesc )">FEATURESLGDESC</a>, <a href="featuresLGconv.html" class="code" title="function DATASETS = featuresLGconv( nsets, cliptypes )">FEATURESLGCONV</a></pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="featuresLGconv.html" class="code" title="function DATASETS = featuresLGconv( nsets, cliptypes )">featuresLGconv</a>	Convert features to DATASETS format so output is same as after featuresSM.</li><li><a href="featuresLGdesc.html" class="code" title="function featuresLGdesc( nsets, cubdesc )">featuresLGdesc</a>	Applies descriptor to every cuboid of every clip of every set.</li><li><a href="featuresLGdetect.html" class="code" title="function featuresLGdetect( nsets, cliptypes, par_stfeatures )">featuresLGdetect</a>	Detects features for each set of cuboids using stfeatures.</li><li><a href="featuresLGpca.html" class="code" title="function [cubdesc,cuboids] = featuresLGpca( nsets, ncuboids, cubdesc, kpca  )">featuresLGpca</a>	Dimensionality reduction for cuboids descriptors.</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="recognition_demo.html" class="code" title="">recognition_demo</a>	Describes all steps of behavior recognition; example for facial expressions.</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

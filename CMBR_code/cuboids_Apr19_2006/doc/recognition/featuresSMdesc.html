@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of featuresSMdesc</title>
+  <meta name="keywords" content="featuresSMdesc">
+  <meta name="description" content="Applies descriptor to every cuboid of every clip of every set.">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html recognition -->
+<h1>featuresSMdesc
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Applies descriptor to every cuboid of every clip of every set.</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function DATASETS = featuresSMdesc( DATASETS, cubdesc ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Applies descriptor to every cuboid of every clip of every set.
+
+ INPUTS
+   DATASETS    - array of structs, should have the fields:
+           .ncilps     - N: number of clips
+           .cuboids    - length N cell vector of sets of cuboids
+   cubdesc     - cuboid descriptor
+
+ OUTPUTS
+   DATASETS    - array of structs, will have additional fields:
+           .desc       - length N cell vector of cuboid descriptors
+
+ See also <a href="featuresSM.html" class="code" title="function [DATASETS,cubdesc,cuboids] = featuresSM( DATASETS, par_stfeatures, cubdesc, kpca)">FEATURESSM</a>, IMAGEDESC, IMAGEDESC_GENERATE</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="../descriptors/imagedesc.html" class="code" title="function desc = imagedesc( I, imdesc, show )">imagedesc</a>	Runs descriptor on a set of images, optionally jitters, and optionally applies PCA.</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="featuresSM.html" class="code" title="function [DATASETS,cubdesc,cuboids] = featuresSM( DATASETS, par_stfeatures, cubdesc, kpca)">featuresSM</a>	Feature detection and description applied to DATASETS behavior data.</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

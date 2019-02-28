@@ -1,0 +1,29 @@
+Introduction
+============
+
+This tool provides a matlab interface to LIBLINEAR for incremental and
+decremental learning.
+
+Usage
+=====
+
+For saving and loading the initial_model, use the matlab build-in
+functions: save and load.  (check the example below).
+
+The usage of train function is the same as liblinear except the following additional option:
+
+-i initial_model_file (matlab variable name): use a previously trained model for incremental/decremental training (only for -s 0 and 2)
+
+Note that this is the matlab variable name of the model after
+training. It is not the name of the .mat file to store the model.
+
+Examples
+========
+
+matlab> [label, instance] = libsvmread('../heart_scale');
+matlab> wsmodel = train(label, instance, '-s 2');
+matlab> save('model.mat', 'wsmodel');
+
+matlab> load('model.mat', '-mat');
+matlab> [label, instance] = libsvmread('../heart_scale');
+matlab> model = train(label, instance, '-s 2 -i wsmodel');

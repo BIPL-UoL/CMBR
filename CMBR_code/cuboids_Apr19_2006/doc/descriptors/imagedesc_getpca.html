@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of imagedesc_getpca</title>
+  <meta name="keywords" content="imagedesc_getpca">
+  <meta name="description" content="Runs descriptor on a subset of cuboids or images to get PCA coefficients.">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html descriptors -->
+<h1>imagedesc_getpca
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Runs descriptor on a subset of cuboids or images to get PCA coefficients.</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function imdesc = imagedesc_getpca( I, imdesc, k, show ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Runs descriptor on a subset of cuboids or images to get PCA coefficients.
+
+ INPUTS
+   I               - 3D array of images or 4D array of cuboids
+   imdesc          - descriptor to apply to each image or cuboid
+   k               - number of PCA coefficients to use [note: k can be later reduced]
+ 
+ OUTPUTS
+   imdesc          - new imdesc with PCA information</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="imagedesc.html" class="code" title="function desc = imagedesc( I, imdesc, show )">imagedesc</a>	Runs descriptor on a set of images, optionally jitters, and optionally applies PCA.</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="imagedesc_demo.html" class="code" title="">imagedesc_demo</a>	Demo to show how imagedesc works.</li><li><a href="../recognition/featuresLGpca.html" class="code" title="function [cubdesc,cuboids] = featuresLGpca( nsets, ncuboids, cubdesc, kpca  )">featuresLGpca</a>	Dimensionality reduction for cuboids descriptors.</li><li><a href="../recognition/featuresSMpca.html" class="code" title="function [cubdesc,cuboids] = featuresSMpca( DATASETS, cubdesc, kpca )">featuresSMpca</a>	Dimensionality reduction for cuboids descriptors.</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

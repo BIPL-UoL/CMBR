@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of conv_datasets2clips</title>
+  <meta name="keywords" content="conv_datasets2clips">
+  <meta name="description" content="Converts between representations of behavior (DATASETS -&gt; mat).">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html recognition -->
+<h1>conv_datasets2clips
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Converts between representations of behavior (DATASETS -&gt; mat).</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function conv_datasets2clips( DATASETS, cliptypes ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Converts between representations of behavior (DATASETS -&gt; mat).
+
+ See RECOGNITION_DEMO for general info.
+   DATASETS --&gt; [datadir(set_ind)/namei.mat]
+
+ INPUTS
+   DATASETS    - struct array contains all behavior data in dataset, should have fields:
+           .IS         - the N behavior clips
+           .IDX        - length N vector of clip types
+   cliptypes       - types of clips (cell of strings)
+
+ See also <a href="recognition_demo.html" class="code" title="">RECOGNITION_DEMO</a>, <a href="conv_movies2clips.html" class="code" title="function conv_movies2clips( set_ind )">CONV_MOVIES2CLIPS</a>, <a href="conv_clips2datasets.html" class="code" title="function DATASETS = conv_clips2datasets( nsets, cliptypes )">CONV_CLIPS2DATASETS</a></pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="datadir.html" class="code" title="function dir = datadir( set_ind )">datadir</a>	Get location of data; alter file depending on location of dataset.</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+</ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of featuresSMpca</title>
+  <meta name="keywords" content="featuresSMpca">
+  <meta name="description" content="Dimensionality reduction for cuboids descriptors.">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html recognition -->
+<h1>featuresSMpca
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Dimensionality reduction for cuboids descriptors.</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function [cubdesc,cuboids] = featuresSMpca( DATASETS, cubdesc, kpca ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Dimensionality reduction for cuboids descriptors.
+
+ Samples cuboids from all datasets, and uses this sample to get the pca coefficient for
+ the descriptor (see imagedesc_getpca).  Should be run after features are detected (of
+ course), and before descriptor is applied to all the cuboids.  This step is optional,
+ but it is probably a good idea since otherwise descriptor can potentially have very
+ large dimension.
+
+ INPUTS
+   DATASETS    - array of structs, should have the fields:
+           .cuboids    - length N cell vector of sets of cuboids
+   cubdesc     - cuboid descriptor [see imagedesc_getpca]
+   kpca        - number of dimensions to reduce data to [see imagedesc_getpca]
+
+ OUTPUTS
+   cubdec      - cuboid descriptor with pca info [see imagedesc_getpca]
+   cuboids     - sampled cuboids 
+
+ See also <a href="featuresSM.html" class="code" title="function [DATASETS,cubdesc,cuboids] = featuresSM( DATASETS, par_stfeatures, cubdesc, kpca)">FEATURESSM</a>, PCA, IMAGEDESC_GETPCA</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="../descriptors/imagedesc_getpca.html" class="code" title="function imdesc = imagedesc_getpca( I, imdesc, k, show )">imagedesc_getpca</a>	Runs descriptor on a subset of cuboids or images to get PCA coefficients.</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="featuresSM.html" class="code" title="function [DATASETS,cubdesc,cuboids] = featuresSM( DATASETS, par_stfeatures, cubdesc, kpca)">featuresSM</a>	Feature detection and description applied to DATASETS behavior data.</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

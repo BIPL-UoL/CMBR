@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of imagedesc_generate</title>
+  <meta name="keywords" content="imagedesc_generate">
+  <meta name="description" content="Generate parameters for image or cuboid descriptor.">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html descriptors -->
+<h1>imagedesc_generate
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Generate parameters for image or cuboid descriptor.</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function imdesc = imagedesc_generate( iscuboid, str_desc, histFLAG, jitterFLAG ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Generate parameters for image or cuboid descriptor.
+
+ INPUTS
+   iscuboid    - 1 for cuboids, 0 for patches
+   str_desc    - 'GRAD', 'FB' for images [see descpatch_*.m]
+               - 'APR', 'GRAD', 'IMDESC', 'WW', 'FLOW' [see desccuboid_*.m]
+   histFLAG    - see imagedesc_ch2desc, also has some additional values [2,3]
+   jitterFLAG  - [optional] see jitter_dist, causes everything to be very slow
+
+ See also <a href="imagedesc.html" class="code" title="function desc = imagedesc( I, imdesc, show )">IMAGEDESC</a>, <a href="imagedesc_demo.html" class="code" title="">IMAGEDESC_DEMO</a>, <a href="imagedesc_ch2desc.html" class="code" title="function desc = imagedesc_ch2desc( CHS, ch2params, iscuboid, nch, ninst )">IMAGEDESC_CH2DESC</a></pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="desccuboid_APR.html" class="code" title="function desc = desccuboid_APR( I, sigmas, taus, ch2params )">desccuboid_APR</a>	Cuboid descriptor based on histogrammed brightness values.</li><li><a href="desccuboid_FLOW.html" class="code" title="function desc = desccuboid_FLOW( I, flow_params, ch2params )">desccuboid_FLOW</a>	Cuboid descriptor based on histogrammed optical flow.</li><li><a href="desccuboid_GRAD.html" class="code" title="function desc = desccuboid_GRAD( I, sigmas, taus, ch2params, ignGt )">desccuboid_GRAD</a>	Cuboid descriptor based on histogrammed gradient.</li><li><a href="desccuboid_IMDESC.html" class="code" title="function desc = desccuboid_imdesc( I, imdesc )">desccuboid_IMDESC</a>	Cuboid descriptor based on a concatentation of the types of frames present.</li><li><a href="desccuboid_WW.html" class="code" title="function desc = desccuboid_WW( I, who_imdesc, what_imdesc, whoweight )">desccuboid_WW</a>	Cuboid descriptor that is a combination of 'who' doing 'what'.</li><li><a href="descpatch_FB.html" class="code" title="function desc = descpatch_FB( I, FB, ch2params )">descpatch_FB</a>	Patch descriptor based on histogrammed filter responses.</li><li><a href="descpatch_GRAD.html" class="code" title="function desc = descpatch_GRAD( I, sigmas, ch2params )">descpatch_GRAD</a>	Patch descriptor based on histogrammed gradient [Lowe's SIFT descriptor].</li><li><a href="imagedesc_generate.html" class="code" title="function imdesc = imagedesc_generate( iscuboid, str_desc, histFLAG, jitterFLAG )">imagedesc_generate</a>	Generate parameters for image or cuboid descriptor.</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="imagedesc_demo.html" class="code" title="">imagedesc_demo</a>	Demo to show how imagedesc works.</li><li><a href="imagedesc_generate.html" class="code" title="function imdesc = imagedesc_generate( iscuboid, str_desc, histFLAG, jitterFLAG )">imagedesc_generate</a>	Generate parameters for image or cuboid descriptor.</li><li><a href="../recognition/recognition_demo.html" class="code" title="">recognition_demo</a>	Describes all steps of behavior recognition; example for facial expressions.</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

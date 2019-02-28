@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of stfeatures_allscales</title>
+  <meta name="keywords" content="stfeatures_allscales">
+  <meta name="description" content="Apply spatio-temporal feature detector at a number of scales.">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html stfeatures -->
+<h1>stfeatures_allscales
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Apply spatio-temporal feature detector at a number of scales.</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function [RS,subs_cell,vals_cell] =stfeatures_allscales( I, sigmas, taus, stfeatures_params, moviename ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Apply spatio-temporal feature detector at a number of scales.
+
+ If moviename is specified creates a movie of the detector responses.  Also calls
+ makemovie_featurelocations to create a movie of the detected feature locations (after
+ nonmaximal suppression).
+
+ INPUTS
+   I           - MxNxK image stack to apply detector to
+   sigmas      - spatial scales
+   taus        - temporal scales
+   periodic    - if 1 uses periodic detector else uses harris detector
+   moviename   - [optional] filename to output movie to
+
+ OUTPUTS
+   RS          - detector responses (M x N x K x nsigmas x ntaus)
+
+ EXAMPLE
+   load example;
+   stfeatures_allscales( I, [2 4], [2 4], {1,[],20,[],2,1,0}, 'example' );</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="makemovie_featurelocations.html" class="code" title="function makemovie_featurelocations( I, sigmas, taus, subs_cell, moviename, fps )">makemovie_featurelocations</a>	Creates visualization of detected feature locations over multiple scales.</li><li><a href="stfeatures.html" class="code" title="function [R,subs,vals,cuboids,V] = stfeatures( I, sigma, tau, periodic, thresh, maxn,overlap_r, shr_spt, shr_tmp, show )">stfeatures</a>	Interface to spatio-temporal feature detectors.</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+</ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

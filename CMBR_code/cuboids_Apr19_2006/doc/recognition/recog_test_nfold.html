@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of recog_test_nfold</title>
+  <meta name="keywords" content="recog_test_nfold">
+  <meta name="description" content="Test the performance of behavior recognition using cross validation.">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html recognition -->
+<h1>recog_test_nfold
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Test the performance of behavior recognition using cross validation.</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function [ER,CM] = recog_test_nfold( DATASETS, k, nreps ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Test the performance of behavior recognition using cross validation.
+
+ Training occurs on all but (n-1) of the sets and testing on the remaining one, giving a
+ total of (n) training/testing scenarios.  One simplification is used here: clustering is
+ done only once, using all of the data.  When reporting final results, clustering needs
+ to be done each time separately, as in recog_test.
+
+ Parameters for clustering and classification can be specified inside this file.
+
+ INPUTS
+   DATASETS    - array of structs, should have the fields:
+           .IDX        - length N vector of clip types
+           .desc       - length N cell vector of cuboid descriptors
+           .ncilps     - N: number of clips
+   k           - number of clusters
+   nreps       - number of repetitions
+   
+ OUTPUTS
+   ER      - error  - averaged over nreps
+   CM      - confusion matrix - averaged over nreps
+
+ See also <a href="recognition_demo.html" class="code" title="">RECOGNITION_DEMO</a>, <a href="recog_test.html" class="code" title="function [ER,CMS] = recog_test( DATASETS, k, nreps )">RECOG_TEST</a>, NFOLDXVAL, <a href="recog_cluster.html" class="code" title="function [clusters,M] = recog_cluster( DATASETS, k, par_kmeans )">RECOG_CLUSTER</a>, <a href="recog_clipsdesc.html" class="code" title="function data = recog_clipsdesc( DATASETS, clusters, csigma )">RECOG_CLIPSDESC</a></pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="recog_clipsdesc.html" class="code" title="function data = recog_clipsdesc( DATASETS, clusters, csigma )">recog_clipsdesc</a>	Create descriptor of every clip.</li><li><a href="recog_cluster.html" class="code" title="function [clusters,M] = recog_cluster( DATASETS, k, par_kmeans )">recog_cluster</a>	Clusters all cuboids in DATASETS (based on their descriptions).</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+</ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

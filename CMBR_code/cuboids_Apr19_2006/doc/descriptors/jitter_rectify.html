@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of jitter_rectify</title>
+  <meta name="keywords" content="jitter_rectify">
+  <meta name="description" content="Post processing for jitter_kmeans.">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html descriptors -->
+<h1>jitter_rectify
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Post processing for jitter_kmeans.</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function [I,desc] = jitter_rectify( IDXr, IJT, descJT ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Post processing for jitter_kmeans.
+
+ After clustering either jittered images or cuboids, the item from the jittered set that
+ was used in the final clustering can be retrieved.  This function does exactly that.
+ IJT and descJT are the images/cuboids jittered and their associated descriptors
+ jittered, where IDXr was returned by jitter_kmeans.
+
+ INPUTS
+   IDXr    - see jitter_kmeans
+   IJT     - ... xNxR  array   
+   descJT  - [optional] NxPxR  array
+
+ OUTPUTS
+   I       - ...xN  array
+   desc    - NxP  array
+
+ See also <a href="jitter_kmeans.html" class="code" title="function [IDX,IDXr,C,sumd] = jitter_kmeans( descJT, k, varargin )">JITTER_KMEANS</a></pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+</ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="imagedesc_demo.html" class="code" title="">imagedesc_demo</a>	Demo to show how imagedesc works.</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

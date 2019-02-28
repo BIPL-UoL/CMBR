@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of recog_test</title>
+  <meta name="keywords" content="recog_test">
+  <meta name="description" content="Test the performance of behavior recognition using the cuboid representation.">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html recognition -->
+<h1>recog_test
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Test the performance of behavior recognition using the cuboid representation.</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function [ER,CMS] = recog_test( DATASETS, k, nreps ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Test the performance of behavior recognition using the cuboid representation.
+
+ Given n sets of data, each containing multiple data instances, we train on 1 set at a
+ time, and then test on each of the remaining sets.  Thus there are (n x n) separate
+ training/testing scenarios. [Note: to get performance on set i given training on i we
+ use cross validation WITHIN the set].   Note that this is not cross validation where
+ training occurs on all but (n-1) of the sets and testing on the remaining one, giving a
+ total of (n) training/testing scenarios.  
+
+ Clustering is performed (using recog_cluster) on cuboids from the single training set.
+ Once the clustering is obtained, each cuboid in all the clips in all the sets is
+ assigned a type and each clip is converted to a histogram of cuboid types (using
+ recog_clipsdesc).  Afterwards standard classification techniques are used to train/test.
+
+ Parameters for clustering and classification can be specified inside this file.
+
+ INPUTS
+   DATASETS    - array of structs, should have the fields:
+           .IDX        - length N vector of clip types
+           .desc       - length N cell vector of cuboid descriptors
+           .ncilps     - N: number of clips
+   k           - number of clusters
+   nreps       - number of repetitions
+   
+ OUTPUTS
+   ER      - error matricies [nsets x nsets] - averaged over nreps
+   CMS     - confusion matricies [nclass x nclass x nsets x nsets] - averaged over nreps
+
+ See also <a href="recognition_demo.html" class="code" title="">RECOGNITION_DEMO</a>, <a href="recog_test_nfold.html" class="code" title="function [ER,CM] = recog_test_nfold( DATASETS, k, nreps )">RECOG_TEST_NFOLD</a>, NFOLDXVAL, <a href="recog_cluster.html" class="code" title="function [clusters,M] = recog_cluster( DATASETS, k, par_kmeans )">RECOG_CLUSTER</a>, <a href="recog_clipsdesc.html" class="code" title="function data = recog_clipsdesc( DATASETS, clusters, csigma )">RECOG_CLIPSDESC</a></pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="recog_clipsdesc.html" class="code" title="function data = recog_clipsdesc( DATASETS, clusters, csigma )">recog_clipsdesc</a>	Create descriptor of every clip.</li><li><a href="recog_cluster.html" class="code" title="function [clusters,M] = recog_cluster( DATASETS, k, par_kmeans )">recog_cluster</a>	Clusters all cuboids in DATASETS (based on their descriptions).</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="recognition_demo.html" class="code" title="">recognition_demo</a>	Describes all steps of behavior recognition; example for facial expressions.</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of stfeatures</title>
+  <meta name="keywords" content="stfeatures">
+  <meta name="description" content="Interface to spatio-temporal feature detectors.">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html stfeatures -->
+<h1>stfeatures
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Interface to spatio-temporal feature detectors.</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function [R,subs,vals,cuboids,V] = stfeatures( I, sigma, tau, periodic, thresh, maxn,overlap_r, shr_spt, shr_tmp, show ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Interface to spatio-temporal feature detectors.
+
+ Wrapper for stfeatures detectors that first shrinks I and then resizes outputs
+ appropriately.  It also applies nonmaximal supression and finds local maxima of detector
+ output.  
+
+ INPUTS
+   I           - 3D uint (or double) array - input video
+   sigma       - spatial scale
+   tau         - temporal scale
+   periodic    - if 1 uses periodic detector else uses harris detector
+   thresh      - [optional] abolute threshold for features strength
+   maxn        - [optional] maximum number of featrues (alternative to thresh)
+   overlap_r   - [optional] controls amount of overlap between cuboids, range: [0,2)
+                 (0 -&gt; no overlap, 2 -&gt; minimal restriction on overlap; 1.7 -&gt; default )
+   show        - [optional] figure to use for display (no display if == 0)
+   shr_spt     - [optional] spatial shrink factor.  Must be integer&gt;1
+   tau_spt     - [optional] temporal shrink factor.  Must be integer&gt;1
+
+ OUTPUTS
+   R       - detector strength response at each image location
+   subs    - detected features locations    
+   vals    - relative feature strengths
+   cuboids - the detected cuboids (size depends on sigma/tau)
+   V       - location of responses visualization
+
+ EXAMPLE
+   load example;
+   [R,subs,vals,cuboids,V] = stfeatures( I, 2, 3, 1, 2e-4, [], 1.85, 2, 1, 1 );
+   [R,subs,vals,cuboids,V] = stfeatures( I, 2, 3, 0, eps, [], 1.85, 2, 1, 5 );
+
+ See also <a href="stfeatures_harris.html" class="code" title="function H = stfeatures_harris( I, sigma, tau )">STFEATURES_HARRIS</a>, <a href="stfeatures_periodic.html" class="code" title="function Lquad = stfeatures_periodic( I, sigma, tau )">STFEATURES_PERIODIC</a>, NONMAXSUPR_WINDOW</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="cuboid_display.html" class="code" title="function [ V, Imasked ] = cuboid_display( I, cuboids_rs, subs, show )">cuboid_display</a>	Fancy cuboid visualization.</li><li><a href="cuboid_extract.html" class="code" title="function [ cuboids, cuboid_starts, cuboid_ends, subs ] =cuboid_extract( I, cuboids_rs, subs, extractflag )">cuboid_extract</a>	Extracts cuboids of given size from the array I at specified locations.</li><li><a href="stfeatures_harris.html" class="code" title="function H = stfeatures_harris( I, sigma, tau )">stfeatures_harris</a>	Laptev & Lindeberg spatiotemporal feature detector - interface through stfeatures.</li><li><a href="stfeatures_periodic.html" class="code" title="function Lquad = stfeatures_periodic( I, sigma, tau )">stfeatures_periodic</a>	Piotr's spatiotemporal feature detector  - interface through stfeatures.</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="../recognition/featuresLGdetect.html" class="code" title="function featuresLGdetect( nsets, cliptypes, par_stfeatures )">featuresLGdetect</a>	Detects features for each set of cuboids using stfeatures.</li><li><a href="../recognition/featuresSMdetect.html" class="code" title="function DATASETS = featuresSMdetect( DATASETS, par_stfeatures )">featuresSMdetect</a>	Detects features for each set of cuboids using stfeatures.</li><li><a href="stfeatures_allscales.html" class="code" title="function [RS,subs_cell,vals_cell] =stfeatures_allscales( I, sigmas, taus, stfeatures_params, moviename )">stfeatures_allscales</a>	Apply spatio-temporal feature detector at a number of scales.</li><li><a href="stfeatures_demo.html" class="code" title="function stfeatures_demo( periodic )">stfeatures_demo</a>	Demo of stfeatures on the "oscillating example".</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

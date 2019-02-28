@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of imagedesc_ch2desc</title>
+  <meta name="keywords" content="imagedesc_ch2desc">
+  <meta name="description" content="Helper, converts descriptor in array format to vector or histogram.">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html &copy; 2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+  <script type="text/javascript">
+    if (top.frames.length == 0) { top.location = "../index.html"; };
+  </script>
+</head>
+<body>
+<a name="_top"></a>
+<!-- menu.html descriptors -->
+<h1>imagedesc_ch2desc
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Helper, converts descriptor in array format to vector or histogram.</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function desc = imagedesc_ch2desc( CHS, ch2params, iscuboid, nch, ninst ) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Helper, converts descriptor in array format to vector or histogram.
+
+ Takes the multiple channel, multiple instance input and creates a descriptor by:
+   1) histFlat==-1  stringing out the channels
+   2) histFlat== 0  using nchs*ninst 1D-histograms
+   3) histFlat== 1  using ninst nch-histograms [SLOW]
+
+ INPUTS
+   CHS         - mxn    x  nchs  x  ninst (if image)
+               - mxnxt  x  nchs  x  ninst (if cuboid)
+   ch2params   - STRUCT with the following fields
+           histFLAG    - if -1 string out vector, if 0 1D histograms, 1 3D histograms 
+           pargmask    - [optional] param to histc_sift (mask_gaussians)
+           edges       - [optional] param to histc_sift (histogram edges)
+   iscuboid    - should be true if cuboid, 0 otherwise [if 2d patch]
+   nch         - must specify number channels, nch [error checking]
+   ninst       - must specify number instances, ninst [error checking]</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+</ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="desccuboid_APR.html" class="code" title="function desc = desccuboid_APR( I, sigmas, taus, ch2params )">desccuboid_APR</a>	Cuboid descriptor based on histogrammed brightness values.</li><li><a href="desccuboid_FLOW.html" class="code" title="function desc = desccuboid_FLOW( I, flow_params, ch2params )">desccuboid_FLOW</a>	Cuboid descriptor based on histogrammed optical flow.</li><li><a href="desccuboid_GRAD.html" class="code" title="function desc = desccuboid_GRAD( I, sigmas, taus, ch2params, ignGt )">desccuboid_GRAD</a>	Cuboid descriptor based on histogrammed gradient.</li><li><a href="descpatch_FB.html" class="code" title="function desc = descpatch_FB( I, FB, ch2params )">descpatch_FB</a>	Patch descriptor based on histogrammed filter responses.</li><li><a href="descpatch_GRAD.html" class="code" title="function desc = descpatch_GRAD( I, sigmas, ch2params )">descpatch_GRAD</a>	Patch descriptor based on histogrammed gradient [Lowe's SIFT descriptor].</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Tue 11-Oct-2005 20:31:02 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" target="_parent">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>
