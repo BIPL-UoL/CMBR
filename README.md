@@ -1,5 +1,8 @@
 # Context-aware Mouse Behaviour Recognition using Hidden Markov Models
 ### Introduction
+
+CMBR is a Mouse Behaviour Recognition framework based on Hidden Markov Models.
+
 ### Ethical proof
 
 All experimental procedures were performed in accordance with the Guidance on the Operation of the Animals (Scientific Procedures) Act, 1986 (UK) and approved by the Queen’s University Belfast Animal.
