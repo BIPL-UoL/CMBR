@@ -1,9 +1,15 @@
 # Context-aware Mouse Behaviour Recognition using Hidden Markov Models
 ### Introduction
 
-CMBR is a Mouse Behaviour Recognition framework based on Hidden Markov Models.
+Automated recognition of mouse behaviours is crucial in studying psychiatric and neurologic diseases. To achieve
+this objective, it is very important to analyse temporal dynamics of mouse behaviours. Here, we release the code in our paper for mouse behavior recognition in a video.
+
+### Dataset
 
 http://serre-lab.clps.brown.edu/wp-content/themes/serre_lab/resources/full_database.zip
+
+### Demo
+* `data/` - Put datasets (images and/or detections) here. Images are expected to be in `<path/to/sequence>/images/`, and detections in `<path/to/sequence>/model-type` (this is also where custom detections will be put). Sequence maps should exist in `data/seqmaps` (an example file is given). Tracking output will be in `data/result/<same/structure/as/dataset>/<sequence-name>.txt`.
 
 ### Ethical proof
 
