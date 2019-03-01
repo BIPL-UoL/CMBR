@@ -6,11 +6,14 @@ this objective, it is very important to analyse temporal dynamics of mouse behav
 
 ### Dataset
 MIT dataset:
+
 video can be downloaded from
 http://serre-lab.clps.brown.edu/wp-content/themes/serre_lab/resources/full_database.zip
+
 Extracted features can be downloaded from
 
 CMBR dataset:
+
 Extracted features can be downloaded from
 
 ### Demo
