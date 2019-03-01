@@ -19,9 +19,8 @@ video can be downloaded from https://uniofleicester-my.sharepoint.com/:u:/g/pers
 Extracted features can be downloaded from https://uniofleicester-my.sharepoint.com/:u:/g/personal/zj53_leicester_ac_uk/EYG7U9IF_GBGjssinUjm5A0BkJGlZJmnhkAgClVrdJSFIA?e=fVTRWe
 
 <p align="center">
-<img src="http://www.people.fas.harvard.edu/~amathis/dlc/MATHIS_2018_odortrail.gif" height="220">
-<img src="https://static1.squarespace.com/static/57f6d51c9f74566f55ecf271/t/5c3fbd0c898583417a040dfc/1547681053201/rat-grasp.gif?format=300w"  height="220">
-<img src="http://www.people.fas.harvard.edu/~amathis/dlc/MATHIS_2018_fly.gif" height="220">
+<img src="https://uniofleicester-my.sharepoint.com/personal/zj53_leicester_ac_uk/Documents/CMBR.gif" height="220">
+<img src="https://uniofleicester-my.sharepoint.com/personal/zj53_leicester_ac_uk/Documents/MIT_result.gif"  height="220">
 </p>
 
 ### Demo
