@@ -18,14 +18,15 @@ video can be downloaded from https://uniofleicester-my.sharepoint.com/:u:/g/pers
 
 Extracted features can be downloaded from https://uniofleicester-my.sharepoint.com/:u:/g/personal/zj53_leicester_ac_uk/EYG7U9IF_GBGjssinUjm5A0BkJGlZJmnhkAgClVrdJSFIA?e=fVTRWe
 
-### demonstrations of automated 
+### Demo
+Put feature data in `mouse_data/` and modify the path of feature data in initial_parameters, then run recognition_demo.
+
+### Demonstrations of automated annotation
+
 <p align="center">
 <img src="https://github.com/BIPL-UoL/CMBR/blob/master/MIT_result.gif" height="220">
 <img src="https://github.com/BIPL-UoL/CMBR/blob/master/QUB_result.gif"  height="220">
 </p>
-
-### Demo
-Put feature data in `mouse_data/` and modify the path of feature data in initial_parameters, then run recognition_demo.
 
 ### Ethical proof
 
