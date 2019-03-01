@@ -10,11 +10,13 @@ MIT dataset:
 video can be downloaded from
 http://serre-lab.clps.brown.edu/wp-content/themes/serre_lab/resources/full_database.zip
 
-Extracted features can be downloaded from
+Extracted features can be downloaded from https://uniofleicester-my.sharepoint.com/:u:/g/personal/zj53_leicester_ac_uk/EftVtfnVP_hPtAH-Qx6fXxsBuDyPiXhfHnd6ppqfhB7zSg?e=6YObmJ
 
 CMBR dataset:
 
-Extracted features can be downloaded from
+video can be downloaded from https://uniofleicester-my.sharepoint.com/:u:/g/personal/zj53_leicester_ac_uk/EUV06n7Evl5BnR7NckNX1C4BW5i4_hdOkU80-EstN-Wlbg?e=quJbSM
+
+Extracted features can be downloaded from https://uniofleicester-my.sharepoint.com/:u:/g/personal/zj53_leicester_ac_uk/EYG7U9IF_GBGjssinUjm5A0BkJGlZJmnhkAgClVrdJSFIA?e=fVTRWe
 
 ### Demo
 Put feature data in `mouse_data/` and modify the path of feature data in initial_parameters, then run recognition_demo.
