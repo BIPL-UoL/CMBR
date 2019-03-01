@@ -3,6 +3,8 @@
 
 CMBR is a Mouse Behaviour Recognition framework based on Hidden Markov Models.
 
+http://serre-lab.clps.brown.edu/wp-content/themes/serre_lab/resources/full_database.zip
+
 ### Ethical proof
 
 All experimental procedures were performed in accordance with the Guidance on the Operation of the Animals (Scientific Procedures) Act, 1986 (UK) and approved by the Queen’s University Belfast Animal.
