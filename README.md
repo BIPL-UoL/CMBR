@@ -18,9 +18,10 @@ video can be downloaded from https://uniofleicester-my.sharepoint.com/:u:/g/pers
 
 Extracted features can be downloaded from https://uniofleicester-my.sharepoint.com/:u:/g/personal/zj53_leicester_ac_uk/EYG7U9IF_GBGjssinUjm5A0BkJGlZJmnhkAgClVrdJSFIA?e=fVTRWe
 
+### demonstrations of automated 
 <p align="center">
 <img src="https://github.com/BIPL-UoL/CMBR/blob/master/MIT_result.gif" height="220">
-<img src="https://uniofleicester-my.sharepoint.com/:i:/g/personal/zj53_leicester_ac_uk/EUzilUPupFFJj-gatEGlCjIBp27VJFV6Sx4cplFlTEBd6Q?e=2RrqO3"  height="220">
+<img src="https://github.com/BIPL-UoL/CMBR/blob/master/QUB_result.gif"  height="220">
 </p>
 
 ### Demo
