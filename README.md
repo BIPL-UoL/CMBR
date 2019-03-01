@@ -19,7 +19,7 @@ video can be downloaded from https://uniofleicester-my.sharepoint.com/:u:/g/pers
 Extracted features can be downloaded from https://uniofleicester-my.sharepoint.com/:u:/g/personal/zj53_leicester_ac_uk/EYG7U9IF_GBGjssinUjm5A0BkJGlZJmnhkAgClVrdJSFIA?e=fVTRWe
 
 <p align="center">
-<img src="https://uniofleicester-my.sharepoint.com/personal/zj53_leicester_ac_uk/Documents/CMBR.gif" height="220">
+<img src="https://github.com/BIPL-UoL/CMBR/blob/master/MIT_result.gif" height="220">
 <img src="https://uniofleicester-my.sharepoint.com/personal/zj53_leicester_ac_uk/Documents/MIT_result.gif"  height="220">
 </p>
 
