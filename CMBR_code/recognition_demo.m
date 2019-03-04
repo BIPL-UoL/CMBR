@@ -40,9 +40,6 @@ if  exist(features_path,'file')
         all_scores{idx}=scores;
         all_predicts{idx}=predicts;
         all_IDX{idx}=DATASETS_test.IDX;
-        %         [ER,CMS]=classification_model(data,double(IDX),cliptypes);
-        % save('result.mat','ER','CMS');
-        % confmatrix_show( CMS, cliptypes );
     end
     save('all_scores.mat','all_scores');
     save('all_IDX.mat','all_IDX');
