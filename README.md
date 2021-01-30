@@ -14,7 +14,7 @@ Extracted features can be downloaded from https://uniofleicester-my.sharepoint.c
 
 CMBR dataset:
 
-video can be downloaded from https://uniofleicester-my.sharepoint.com/:u:/g/personal/zj53_leicester_ac_uk/EUV06n7Evl5BnR7NckNX1C4BW5i4_hdOkU80-EstN-Wlbg?e=quJbSM
+video can be downloaded from https://www.dropbox.com/s/o6701i37yrzxq8b/mouse_video.zip?dl=0
 
 Extracted features can be downloaded from https://uniofleicester-my.sharepoint.com/:u:/g/personal/zj53_leicester_ac_uk/EYG7U9IF_GBGjssinUjm5A0BkJGlZJmnhkAgClVrdJSFIA?e=fVTRWe
 
